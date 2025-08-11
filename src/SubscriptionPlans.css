@@ -1,0 +1,75 @@
+/* SubscriptionPlans.css */
+.plans-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.plans-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.plan-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+
+.plan-card:hover {
+  transform: scale(1.03);
+}
+
+.plan-card h2 {
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.cycle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.plan-details {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.plan-details li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
